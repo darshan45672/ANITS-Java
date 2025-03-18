@@ -9,39 +9,10 @@ import java.util.Scanner;
 // It contains at least one even and one odd digit.
 // The sum of all digits must be divisible by 4.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 public class Q3 {
     public static void main(String[] args) {
-        
-         Scanner sc = new Scanner(System.in);
+
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter a 4-digit PIN: ");
         int pin = sc.nextInt();
 
@@ -57,8 +28,10 @@ public class Q3 {
         while (temp > 0) {
             int digit = temp % 10;
             sum += digit;
-            if (digit % 2 == 0) hasEven = true;
-            else hasOdd = true;
+            if (digit % 2 == 0)
+                hasEven = true;
+            else
+                hasOdd = true;
             temp /= 10;
         }
 

@@ -3,46 +3,17 @@ package day2.competitveCoding;
 import java.util.Scanner;
 
 // Problem Statement:
-// A number is a palindrome if it reads the same forwards and backwards.
+// A number is a palindrome if it reads the same forwards and 
+// backwards.
 
 // However, in an advanced system:
 
-// A prime palindrome (both palindrome and prime) is considered a "Super Number".
+// A prime palindrome (both palindrome and prime) is considered 
+// a "Super Number".
 // Any non-palindrome prime is considered a "Normal Prime".
 // Otherwise, the number is "Not Special".
-// Write a Java program to categorize a number based on the above conditions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Write a Java program to categorize a number based on the above 
+// conditions.
 
 public class Q4 {
     public static void main(String[] args) {
@@ -59,7 +30,8 @@ public class Q4 {
 
         boolean isPrime = num > 1;
         for (int i = 2; i * i <= num && isPrime; i++) {
-            if (num % i == 0) isPrime = false;
+            if (num % i == 0)
+                isPrime = false;
         }
 
         if (isPalindrome && isPrime) {
@@ -69,7 +41,7 @@ public class Q4 {
         } else {
             System.out.println("Not Special");
         }
-        
+
         sc.close();
     }
 }

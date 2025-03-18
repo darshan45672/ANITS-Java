@@ -14,38 +14,9 @@ import java.util.Scanner;
 // Takes the current hour (0-23) and the elapsed time (0-100s).
 // Determines the current traffic light color.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 public class Q2 {
     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter current hour (0-23): ");
         int hour = sc.nextInt();
         System.out.print("Enter elapsed time (0-100s): ");
@@ -58,12 +29,18 @@ public class Q2 {
 
         int red, yellow, green;
 
-        if (hour >= 6 && hour < 12) {  
-            red = 30; yellow = 5; green = 25;
-        } else if (hour >= 12 && hour < 18) { 
-            red = 40; yellow = 7; green = 20;
-        } else { 
-            red = 50; yellow = 10; green = 15;
+        if (hour >= 6 && hour < 12) {
+            red = 30;
+            yellow = 5;
+            green = 25;
+        } else if (hour >= 12 && hour < 18) {
+            red = 40;
+            yellow = 7;
+            green = 20;
+        } else {
+            red = 50;
+            yellow = 10;
+            green = 15;
         }
 
         int cycle = red + yellow + green;
